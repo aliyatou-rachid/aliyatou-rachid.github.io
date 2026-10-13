@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aliyatou Rachid | Développeuse full stack et Graphics Designer, Yaoundé</title>
+<meta name="description" content="Portfolio d'Aliyatou Rachid, étudiante en génie logiciel à l'Université de Yaoundé I. Développement frontend (Flutter, Tailwind CSS) et backend (Node.js, Express.js), UI/UX design. Projets : Uniflow, ImmoConnect, BusSticket.">
+<meta name="author" content="Aliyatou Rachid">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://aliyatou-rachid.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Aliyatou Rachid | Développeuse full stack et Graphics Designer, Yaoundé">
+<meta property="og:description" content="Portfolio d'Aliyatou Rachid, étudiante en génie logiciel à l'Université de Yaoundé I. Développement frontend (Flutter, Tailwind CSS) et backend (Node.js, Express.js), UI/UX design. Projets : Uniflow, ImmoConnect, BusSticket.">
+<meta property="og:url" content="https://aliyatou-rachid.github.io/">
+<meta property="og:image" content="https://aliyatou-rachid.github.io/photo.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#1E4FD8">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Aliyatou Rachid Oumou Tourab","alternateName":"Aliyatou Rachid","jobTitle":"Software engineer & Graphics Designer","url":"https://aliyatou-rachid.github.io/","image":"https://aliyatou-rachid.github.io/photo.jpg","sameAs":["https://github.com/Aliya-nadi"],"address":{"@type":"PostalAddress","addressLocality":"Yaoundé","addressCountry":"CM"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Université de Yaoundé I"},"knowsAbout":["Flutter","Node.js","Express.js","Tailwind CSS","JavaScript","UI/UX design"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--soft:#EEF4FF;--ink:#0A1F4D;--mute:#4A5C85;--blue:#1E4FD8;--orange:#FF6B1A;--line:#D9E3F7;--card:#fff;--navy:#0A1F4D;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A1430;--soft:#10204A;--ink:#F2F6FF;--mute:#A9B8DA;--blue:#7BA0FF;--orange:#FF8A3D;--line:#22356B;--card:#0F1D44}}
+:root[data-theme="dark"]{--bg:#0A1430;--soft:#10204A;--ink:#F2F6FF;--mute:#A9B8DA;--blue:#7BA0FF;--orange:#FF8A3D;--line:#22356B;--card:#0F1D44}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Figtree,system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,system-ui,sans-serif;line-height:1.08;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+h2{font-size:clamp(30px,4.4vw,46px);font-weight:800;margin-bottom:12px}
+.lead{color:var(--mute);max-width:56ch;margin:0 0 40px}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font:700 18px "Bricolage Grotesque",sans-serif;text-decoration:none}
+.logo b{width:36px;height:36px;border-radius:50% 50% 50% 8px;background:var(--orange);color:var(--navy);display:grid;place-items:center;font-size:15px}
+nav{display:flex;align-items:center;gap:26px}
+nav a{text-decoration:none;font-weight:500;color:var(--mute);transition:color .2s}
+nav a:hover,nav a.on{color:var(--ink)}
+nav a.on{box-shadow:0 2px 0 var(--orange)}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:600;text-decoration:none;background:var(--orange);color:var(--navy)!important;border:2px solid var(--orange);transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.alt{background:transparent;color:var(--ink)!important;border-color:var(--blue)}
+.btn.alt:hover{background:var(--soft)}
+nav .btn{padding:9px 18px;box-shadow:none!important}
+.burger{display:none;background:none;border:2px solid var(--line);border-radius:10px;width:44px;height:44px;color:var(--ink);font-size:20px;cursor:pointer}
+
+.hero{padding:72px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;font-size:15px;color:var(--mute);margin-bottom:24px;background:var(--card)}
+.status i{width:9px;height:9px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 4px color-mix(in srgb,var(--orange) 25%,transparent)}
+h1{font-size:clamp(46px,8vw,92px);font-weight:800}
+h1 span{color:var(--blue)}
+.role{font:500 clamp(20px,2.6vw,26px) "Bricolage Grotesque",sans-serif;margin:20px 0 14px}
+.hero p.intro{color:var(--mute);max-width:52ch;margin:0 0 30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.facts{display:flex;gap:36px;flex-wrap:wrap;margin-top:44px;padding-top:24px;border-top:1px solid var(--line)}
+.facts div{font-size:15px;color:var(--mute);line-height:1.35}
+.facts b{display:block;font:800 28px "Bricolage Grotesque",sans-serif;color:var(--ink)}
+
+.stage{position:relative;aspect-ratio:1/1.1;max-width:400px;margin-left:auto;width:100%}
+.stage .blob{position:absolute;inset:6% 0 0 8%;background:var(--soft);border-radius:42% 58% 46% 54%/50% 40% 60% 50%}
+.phone{position:absolute;left:14%;top:0;width:62%;height:90%;background:var(--blue);border-radius:34px;padding:16px;box-shadow:0 30px 60px -20px color-mix(in srgb,var(--blue) 55%,transparent);transform:rotate(-4deg);animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.ph{position:absolute;left:10%;top:0;width:74%;height:90%;margin:0;border-radius:999px 999px 28px 28px;overflow:hidden;border:6px solid var(--bg);background:var(--soft);box-shadow:0 30px 60px -22px color-mix(in srgb,var(--blue) 60%,transparent);animation:rise2 .9s cubic-bezier(.2,.8,.2,1) both}
+.ph img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;display:block}
+.screen{height:100%;background:#fff;border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.screen .av{width:46px;height:46px;border-radius:50%;background:var(--orange)}
+.screen .l{height:10px;border-radius:6px;background:#D9E3F7}
+.screen .l.w{width:70%}.screen .l.s{width:45%}
+.screen .img{flex:1;border-radius:14px;background:linear-gradient(135deg,#BFD3FF,#EEF4FF);position:relative;overflow:hidden}
+.screen .img::after{content:"";position:absolute;width:60%;aspect-ratio:1;border-radius:50%;background:var(--orange);right:-12%;bottom:-18%;opacity:.9}
+.screen .b{height:34px;border-radius:999px;background:var(--navy)}
+.tag{position:absolute;padding:8px 16px;border-radius:999px;font:700 15px "Bricolage Grotesque",sans-serif;box-shadow:0 12px 24px -10px rgba(10,31,77,.35);animation:rise 1s .25s cubic-bezier(.2,.8,.2,1) both}
+.tag.t1{right:0;top:14%;background:var(--orange);color:var(--navy)}
+.tag.t2{left:0;top:52%;background:#fff;color:#0A1F4D;border:2px solid #1E4FD8}
+.tag.t3{right:4%;bottom:8%;background:#0A1F4D;color:#fff}
+.tag.t4{left:-2%;top:26%;background:#1E4FD8;color:#fff}
+@keyframes rise{from{opacity:0;transform:translateY(24px) rotate(-4deg)}}
+.tag{animation-name:rise2}@keyframes rise2{from{opacity:0;transform:translateY(24px)}}
+
+.about{background:var(--soft)}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.about p{margin:0 0 16px;color:var(--mute)}
+.about p:first-of-type{color:var(--ink);font-size:20px}
+.langs{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.cols h3{font-size:24px;margin-bottom:24px;color:var(--blue)}
+.tl{list-style:none;margin:0;padding:0 0 0 26px;border-left:3px solid var(--line)}
+.tl li{position:relative;padding-bottom:26px}
+.tl li::before{content:"";position:absolute;left:-35px;top:7px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:3px solid var(--blue)}
+.tl li.now::before{background:var(--orange);border-color:var(--orange)}
+.tl time{font-size:14px;font-weight:600;color:var(--orange)}
+.tl h4{margin:2px 0 4px;font:700 19px "Bricolage Grotesque",sans-serif}
+.tl p{margin:0;color:var(--mute);font-size:16px;line-height:1.55}
+
+.skills{background:var(--soft)}
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
+.card h3{font-size:20px;margin-bottom:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:6px 14px;border-radius:999px;border:1px solid var(--line);font-size:15px;background:var(--bg)}
+.chip.o{border-color:var(--orange)}.chip.b{border-color:var(--blue)}
+.card:nth-child(3n+1){border-top:5px solid var(--blue)}
+.card:nth-child(3n+2){border-top:5px solid var(--orange)}
+.card:nth-child(3n){border-top:5px solid var(--navy)}
+
+.feat{display:grid;grid-template-columns:1fr 1.25fr;gap:32px;align-items:center;background:var(--blue);color:#fff;border-radius:28px;padding:36px;margin-bottom:20px}
+.feat h3{font-size:clamp(30px,4vw,42px)}
+.feat .sub{margin:6px 0 14px;color:#FFB98F;font-weight:600}
+.feat p{color:#E3ECFF;margin:0 0 18px}
+.feat .chip{background:transparent;border-color:rgba(255,255,255,.5);color:#fff}
+.feat video{width:100%;aspect-ratio:16/9;border-radius:16px;background:#050B1F;box-shadow:0 24px 50px -20px rgba(0,0,0,.5)}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.proj{display:flex;flex-direction:column;gap:12px;transition:transform .25s,border-color .25s}
+.proj:hover{transform:translateY(-4px);border-color:var(--blue)}
+.proj h3{font-size:24px}
+.proj p{margin:0;color:var(--mute)}
+.proj .chips{margin-top:auto}
+.proj a{font-weight:600;color:var(--blue)}
+
+.contact{background:#1E4FD8;color:#fff;border-radius:32px;padding:56px;margin-bottom:48px;position:relative;overflow:hidden}
+.contact::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:#FF6B1A;right:-70px;top:-90px}
+.contact>*{position:relative;z-index:1}
+.contact h2{color:#fff;max-width:14ch}
+.contact p{color:#E3ECFF;max-width:46ch;margin:0 0 28px}
+.clist{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.clist a{display:block;padding:16px 20px;border-radius:16px;background:rgba(255,255,255,.12);text-decoration:none;border:1px solid rgba(255,255,255,.28);transition:background .2s}
+.clist a:hover{background:rgba(255,255,255,.22)}
+.clist small{display:block;color:#CFDDFF;font-size:14px}
+.clist span{font-weight:600;word-break:break-word}
+footer{padding:0 0 40px;color:var(--mute);font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media (max-width:860px){
+section{padding:68px 0}
+.hero .wrap,.about .wrap,.cols{grid-template-columns:1fr;gap:40px}
+.pgrid,.feat{grid-template-columns:1fr}
+.feat{padding:22px;border-radius:22px}
+.sgrid{grid-template-columns:1fr}
+.stage{margin:0 auto;max-width:320px}
+.contact{padding:36px 24px;border-radius:24px}
+.burger{display:block}
+nav{position:absolute;left:0;right:0;top:68px;background:var(--bg);flex-direction:column;align-items:flex-start;padding:20px 24px;gap:16px;border-bottom:1px solid var(--line);display:none}
+nav.open{display:flex}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Accueil"><b>AR</b>Aliyatou Rachid</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+    <nav id="menu">
+      <a href="#apropos">À propos</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projets">Projets</a>
+      <a class="btn" href="#contact">Me contacter</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="status"><i></i>Étudiante en Licence 3, Yaoundé</div>
+      <h1>Aliyatou <span>Rachid</span></h1>
+      <p class="role">Software engineer &amp; Graphics Designer</p>
+      <p class="intro">Je conçois des interfaces claires et je développe le serveur qui les fait fonctionner, du frontend au backend. Étudiante en génie logiciel à l'Université de Yaoundé I, j'aime le développement web, l'intelligence artificielle et les solutions innovantes.</p>
+      <div class="cta">
+        <a class="btn" href="#projets">Voir mes projets</a>
+        <a class="btn alt" data-gh target="_blank" rel="noopener">Mon GitHub</a>
+      </div>
+      <div class="facts">
+        <div><b>L3</b>Génie logiciel, UY1</div>
+        <div><b>5</b>expériences<br>pro et associatives</div>
+        <div><b>FR / EN</b>langues de travail</div>
+      </div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="blob"></div>
+      <figure class="ph"><img src="photo.jpg" width="497" height="438" alt="Portrait d'Aliyatou Rachid"></figure>
+      <span class="tag t1">UI/UX</span>
+      <span class="tag t2">Dev front</span>
+      <span class="tag t4">Backend</span>
+      <span class="tag t3">Design</span>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="apropos">
+  <div class="wrap">
+    <div>
+      <h2>Rigoureuse, autonome, curieuse.</h2>
+    </div>
+    <div>
+      <p>Je suis en Licence 3 Informatique, filière ICT, option Génie logiciel, à l'Université de Yaoundé I.</p>
+      <p>J'ai déjà réalisé plusieurs projets académiques de gestion, et je développe mes compétences en entreprise, entre design d'interfaces, appui à la gestion de projets et encadrement.</p>
+      <p>Mon objectif : construire des produits utiles, bien pensés, du prototype jusqu'au code.</p>
+      <div class="langs"><span class="chip b">Français</span><span class="chip b">English</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="parcours">
+  <div class="wrap">
+    <h2>Parcours</h2>
+    <p class="lead">Ce que j'ai fait, et où j'ai appris.</p>
+    <div class="cols">
+      <div>
+        <h3>Expérience</h3>
+        <ul class="tl">
+          <li class="now"><time>En cours</time><h4>Assistante de direction</h4><p>KAOLO Startup, Yaoundé. Appui à la gestion administrative, suivi des activités, coordination des projets, rédaction de documents professionnels.</p></li>
+          <li><time>Projet de groupe</time><h4>Développeuse frontend, Kernel Forge</h4><p>Développement du frontend web et desktop de la plateforme Uniflow, avec Flutter.</p></li>
+          <li><time>Design</time><h4>UI/UX Designer</h4><p>Te-Sea. Conception UI/UX de plusieurs applications, dont ChantierConnect : recherche utilisateur, prototypage et maquettes finales.</p></li>
+          <li><time>Associatif</time><h4>Trésorière &amp; encadreur</h4><p>Centre Pilote Linguistique de Yaoundé. Gestion des finances, accompagnement des apprenants du Club Bilingue.</p></li>
+          <li><time>Stage</time><h4>Stagiaire académique / assistante</h4><p>Département d'Informatique, Institut de Formation Professionnelle KAOLO. Assistance aux projets de développement, collecte et traitement de données académiques.</p></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Formation</h3>
+        <ul class="tl">
+          <li class="now"><time>2026 – 2027</time><h4>Licence Informatique, niveau 3</h4><p>Option Génie logiciel (ICT), Université de Yaoundé I.</p></li>
+          <li><time>2025 – 2026</time><h4>Licence 2</h4><p>MGP : 2,81</p></li>
+          <li><time>2024 – 2025</time><h4>Licence 1</h4><p>MGP : 2,74</p></li>
+          <li><time>2022 – 2023</time><h4>Baccalauréat, série C</h4></li>
+          <li><time>2021 – 2022</time><h4>Probatoire, série C</h4></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="skills" id="competences">
+  <div class="wrap">
+    <h2>Compétences</h2>
+    <p class="lead">Du design d'interface au code, avec les outils d'une équipe.</p>
+    <div class="sgrid">
+      <div class="card"><h3>Design &amp; marketing</h3><div class="chips"><span class="chip o">Web design</span><span class="chip o">Graphic design</span><span class="chip o">UI/UX design</span><span class="chip o">Marketing</span></div></div>
+      <div class="card"><h3>Langages</h3><div class="chips"><span class="chip b">HTML / CSS</span><span class="chip b">JavaScript</span><span class="chip b">C</span><span class="chip">Python (débutant)</span><span class="chip">Java (bases)</span><span class="chip">SQL (débutant)</span></div></div>
+      <div class="card"><h3>Outils</h3><div class="chips"><span class="chip">VS Code</span><span class="chip">Git &amp; GitHub</span><span class="chip">Android Studio</span><span class="chip">Microsoft Word</span></div></div>
+      <div class="card"><h3>Frameworks &amp; méthodes</h3><div class="chips"><span class="chip b">Flutter</span><span class="chip b">Tailwind CSS</span><span class="chip b">Node.js</span><span class="chip b">Express.js</span><span class="chip">React (en apprentissage)</span><span class="chip">Spring (bases)</span><span class="chip b">Méthodologies Agile</span></div></div>
+      <div class="card"><h3>Complémentaires</h3><div class="chips"><span class="chip o">Rédaction professionnelle</span><span class="chip o">Travail en équipe</span><span class="chip o">Autonomie</span></div></div>
+      <div class="card"><h3>Langues</h3><div class="chips"><span class="chip b">Français</span><span class="chip b">English</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="projets">
+  <div class="wrap">
+    <h2>Projets</h2>
+    <p class="lead">Ce que j'ai conçu, construit et livré.</p>
+    <article class="feat">
+      <div>
+        <h3>Uniflow</h3>
+        <p class="sub">Projet du groupe Kernel Forge · Frontend web &amp; desktop</p>
+        <p>Une plateforme numérique de gestion académique qui réunit quatre profils au même endroit : l'étudiant, l'enseignant, le chef de département et l'administrateur de l'université.</p>
+        <p><strong>Mon rôle :</strong> j'ai développé le frontend des versions web et desktop avec Flutter, c'est-à-dire toutes les interfaces que les quatre profils utilisent au quotidien.</p>
+        <div class="chips"><span class="chip">Étudiant</span><span class="chip">Enseignant</span><span class="chip">Chef de département</span><span class="chip">Administrateur</span></div>
+        <div class="chips" style="margin-top:10px"><span class="chip" style="background:#FF6B1A;border-color:#FF6B1A;color:#0A1F4D;font-weight:600">Flutter</span><span class="chip">Frontend web</span><span class="chip">Frontend desktop</span></div>
+      </div>
+      <video controls preload="none" playsinline poster="poster.jpg" src="demo.mp4" aria-label="Démo de la plateforme Uniflow"></video>
+    </article>
+    <div class="pgrid">
+      <article class="card proj">
+        <h3>ChantierConnect</h3>
+        <p>Conception du UI/UX de l'application chez Te-Sea : recherche utilisateur, prototypage, puis maquettes finales.</p>
+        <div class="chips"><span class="chip o">UI/UX</span><span class="chip">Prototypage</span><span class="chip">Maquettes</span></div>
+      </article>
+      <article class="card proj">
+        <h3>ImmoConnect</h3>
+        <p>Application de gestion immobilière, conçue et développée de A à Z, de l'interface au serveur.</p>
+        <div class="chips"><span class="chip b">Tailwind CSS</span><span class="chip b">HTML</span><span class="chip b">JavaScript</span><span class="chip o">Node.js</span><span class="chip o">Express.js</span></div>
+      </article>
+      <article class="card proj">
+        <h3>BusSticket</h3>
+        <p>Gestion des tickets de bus pour les agences de voyage, avec la même pile technique, front et back.</p>
+        <div class="chips"><span class="chip b">Tailwind CSS</span><span class="chip b">HTML</span><span class="chip b">JavaScript</span><span class="chip o">Node.js</span><span class="chip o">Express.js</span></div>
+      </article>
+      <article class="card proj" style="grid-column:1/-1">
+        <h3>Code sur GitHub</h3>
+        <p>ImmoConnect, BusSticket et d'autres projets full stack, à découvrir en détail sur mon profil.</p>
+        <a data-gh target="_blank" rel="noopener">Ouvrir GitHub</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:24px">
+  <div class="wrap">
+    <div class="contact">
+      <h2>Travaillons ensemble.</h2>
+      <p>Un stage, un projet, une maquette à imaginer ? Écris-moi, je réponds vite.</p>
+      <div class="clist">
+        <a data-mail><small>E-mail</small><span id="mailTxt"></span></a>
+        <a data-tel="0"><small>Téléphone</small><span id="tel0"></span></a>
+        <a data-tel="1"><small>Téléphone</small><span id="tel1"></span></a>
+        <a data-gh target="_blank" rel="noopener"><small>GitHub</small><span>Voir mon profil</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© <span id="yr"></span> Aliyatou Rachid Oumou Tourab. Yaoundé, Nkomkana, Cameroun.</span><a href="#top">Retour en haut</a></div></footer>
+
+<script>
+/* ====== À MODIFIER ====== */
+var CONFIG = {
+  github: "https://github.com/Aliya-nadi",
+  email: "oumou.aliyatou@facsciences-uy1.cm",
+  phones: ["+237670483414", "+237693434456"]
+};
+/* ======================== */
+document.querySelectorAll("[data-gh]").forEach(function(a){a.href=CONFIG.github});
+var m=document.querySelector("[data-mail]");m.href="mailto:"+CONFIG.email;document.getElementById("mailTxt").textContent=CONFIG.email;
+CONFIG.phones.forEach(function(p,i){
+  document.querySelector('[data-tel="'+i+'"]').href="tel:"+p;
+  document.getElementById("tel"+i).textContent=p.replace(/^\+237(\d{3})(\d{3})(\d{3})$/,"+237 $1 $2 $3");
+});
+document.getElementById("yr").textContent=new Date().getFullYear();
+
+var burger=document.getElementById("burger"),menu=document.getElementById("menu");
+burger.addEventListener("click",function(){
+  var o=menu.classList.toggle("open");burger.setAttribute("aria-expanded",o);
+});
+menu.addEventListener("click",function(e){if(e.target.tagName==="A"){menu.classList.remove("open");burger.setAttribute("aria-expanded","false")}});
+
+var links=document.querySelectorAll("nav a[href^='#']:not(.btn)");
+if("IntersectionObserver" in window){
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){links.forEach(function(l){l.classList.toggle("on",l.getAttribute("href")==="#"+e.target.id)})}
+    });
+  },{rootMargin:"-45% 0px -50% 0px"});
+  document.querySelectorAll("section[id]").forEach(function(s){io.observe(s)});
+}
+</script>
+</body>
+</html>
