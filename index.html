@@ -151,6 +151,40 @@ nav{position:absolute;left:0;right:0;top:68px;background:var(--bg);flex-directio
 nav.open{display:flex}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.ch{display:flex;align-items:center;gap:12px;margin-bottom:16px}.ch h3{margin:0;font-size:19px}
+.ic{flex:none;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--soft);color:var(--blue)}.ic svg{width:22px;height:22px}
+.svc{background:var(--soft)}
+.svgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.scard{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:36px 28px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;transition:transform .25s,border-color .25s}
+.scard:hover{transform:translateY(-4px);border-color:var(--blue)}
+.sic{width:68px;height:68px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--blue) 12%,transparent);color:var(--blue)}.sic svg{width:32px;height:32px}
+.scard:nth-child(2n) .sic{background:color-mix(in srgb,var(--orange) 16%,transparent);color:var(--orange)}
+.scard h3{font-size:23px}.scard p{margin:0 0 10px;color:var(--mute);max-width:40ch}
+.btn.sm{padding:9px 22px;font-size:15px;margin-top:auto}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.term{background:#0A1F4D;border:1px solid #1E4FD8;border-radius:20px;overflow:hidden;color:#CFE0FF;font:16px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;box-shadow:0 24px 50px -28px rgba(10,31,77,.6)}
+.tbar{display:flex;align-items:center;gap:8px;padding:14px 18px;border-bottom:1px solid #1E4FD8;background:rgba(255,255,255,.04)}
+.tbar i{width:12px;height:12px;border-radius:50%;background:#FF6B1A}.tbar i:nth-child(2){background:#fff}.tbar i:nth-child(3){background:#1E4FD8}
+.tbar span{font-weight:700;font-size:14px;color:#fff}
+.tbody{padding:22px 20px 24px}.tbody p{margin:0 0 8px}.tbody b{color:#FF8A3D}
+.f{margin-top:16px}.f label{display:block;color:#FF8A3D;font-weight:700;margin-bottom:6px}
+.f input,.f textarea{width:100%;font:inherit;color:#fff;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:11px 14px;resize:vertical}
+.f input:focus,.f textarea:focus{outline:2px solid #FF6B1A;outline-offset:1px}
+.send{width:100%;margin-top:20px;padding:14px;border:0;border-radius:10px;background:#FF6B1A;color:#0A1F4D;font:700 16px ui-monospace,Menlo,Consolas,monospace;cursor:pointer;transition:transform .2s}
+.send b{color:#0A1F4D}.send:hover{transform:translateY(-2px)}
+.note{min-height:1.5em;margin:12px 0 0!important;font-size:14px;color:#FFB98F}
+.prof{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
+.prof h3{font-size:22px;text-align:center;margin-bottom:20px;color:var(--blue)}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.tile{display:flex;flex-direction:column;align-items:center;gap:10px;padding:20px 10px;border:2px solid var(--line);border-radius:16px;text-decoration:none;font-weight:600;color:var(--c);transition:transform .2s,border-color .2s,background .2s}
+.tile:hover{transform:translateY(-3px);border-color:var(--c);background:color-mix(in srgb,var(--c) 8%,transparent)}
+.ti{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 14%,transparent);font:800 17px "Bricolage Grotesque",sans-serif}.ti svg{width:24px;height:24px}
+.inf{display:flex;align-items:center;gap:14px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;margin-top:10px}
+.inf b{display:block;font-weight:600}.inf small{color:var(--mute);font-size:15px}
+.ii{color:var(--blue)}.ii svg{width:24px;height:24px;display:block}
+@media (max-width:860px){.svgrid,.cgrid{grid-template-columns:1fr}.prof{padding:20px}}
+@media (max-width:380px){.tiles{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -163,6 +197,7 @@ nav.open{display:flex}
       <a href="#parcours">Parcours</a>
       <a href="#competences">Compétences</a>
       <a href="#projets">Projets</a>
+      <a href="#services">Services</a>
       <a class="btn" href="#contact">Me contacter</a>
     </nav>
   </div>
@@ -245,12 +280,12 @@ nav.open{display:flex}
     <h2>Compétences</h2>
     <p class="lead">Du design d'interface au code, avec les outils d'une équipe.</p>
     <div class="sgrid">
-      <div class="card"><h3>Design &amp; marketing</h3><div class="chips"><span class="chip o">Web design</span><span class="chip o">Graphic design</span><span class="chip o">UI/UX design</span><span class="chip o">Marketing</span></div></div>
-      <div class="card"><h3>Langages</h3><div class="chips"><span class="chip b">HTML / CSS</span><span class="chip b">JavaScript</span><span class="chip b">C</span><span class="chip">Python (débutant)</span><span class="chip">Java (bases)</span><span class="chip">SQL (débutant)</span></div></div>
-      <div class="card"><h3>Outils</h3><div class="chips"><span class="chip">VS Code</span><span class="chip">Git &amp; GitHub</span><span class="chip">Android Studio</span><span class="chip">Microsoft Word</span></div></div>
-      <div class="card"><h3>Frameworks &amp; méthodes</h3><div class="chips"><span class="chip b">Flutter</span><span class="chip b">Tailwind CSS</span><span class="chip b">Node.js</span><span class="chip b">Express.js</span><span class="chip">React (en apprentissage)</span><span class="chip">Spring (bases)</span><span class="chip b">Méthodologies Agile</span></div></div>
-      <div class="card"><h3>Complémentaires</h3><div class="chips"><span class="chip o">Rédaction professionnelle</span><span class="chip o">Travail en équipe</span><span class="chip o">Autonomie</span></div></div>
-      <div class="card"><h3>Langues</h3><div class="chips"><span class="chip b">Français</span><span class="chip b">English</span></div></div>
+      <div class="card"><div class="ch"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span><h3>Langages de programmation</h3></div><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Node.js</span><span class="chip">Dart</span><span class="chip">C</span><span class="chip">Python (débutant)</span><span class="chip">Java (bases)</span><span class="chip">SQL (débutant)</span></div></div>
+      <div class="card"><div class="ch"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5zM3 13l9 5 9-5"/></svg></span><h3>Frameworks &amp; bibliothèques</h3></div><div class="chips"><span class="chip">Flutter</span><span class="chip">Tailwind CSS</span><span class="chip">Express.js</span><span class="chip">React (en apprentissage)</span><span class="chip">Spring (bases)</span></div></div>
+      <div class="card"><div class="ch"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span><h3>Bases de données</h3></div><div class="chips"><span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">XAMPP</span></div></div>
+      <div class="card"><div class="ch"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg></span><h3>Gestion Système et Serveurs</h3></div><div class="chips"><span class="chip">Linux</span><span class="chip">PowerShell</span><span class="chip">GitHub</span></div></div>
+      <div class="card"><div class="ch"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span><h3>Design &amp; marketing</h3></div><div class="chips"><span class="chip">Web design</span><span class="chip">Graphic design</span><span class="chip">UI/UX design</span><span class="chip">Marketing</span></div></div>
+      <div class="card"><div class="ch"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5 5L3 18l3 3 6.7-6.7a4 4 0 0 0 5-5l-2.5 2.5-2.2-.5-.5-2.2z"/></svg></span><h3>Outils &amp; autres</h3></div><div class="chips"><span class="chip">VS Code</span><span class="chip">Git</span><span class="chip">Android Studio</span><span class="chip">Microsoft Word</span><span class="chip">Méthodes Agiles</span><span class="chip">Rédaction professionnelle</span><span class="chip">Travail en équipe</span><span class="chip">Autonomie</span></div></div>
     </div>
   </div>
 </section>
@@ -295,16 +330,41 @@ nav.open{display:flex}
   </div>
 </section>
 
-<section id="contact" style="padding-top:24px">
+<section class="svc" id="services">
   <div class="wrap">
-    <div class="contact">
-      <h2>Travaillons ensemble.</h2>
-      <p>Un stage, un projet, une maquette à imaginer ? Écris-moi, je réponds vite.</p>
-      <div class="clist">
-        <a data-mail><small>E-mail</small><span id="mailTxt"></span></a>
-        <a data-tel="0"><small>Téléphone</small><span id="tel0"></span></a>
-        <a data-tel="1"><small>Téléphone</small><span id="tel1"></span></a>
-        <a data-gh target="_blank" rel="noopener"><small>GitHub</small><span>Voir mon profil</span></a>
+    <h2>Services</h2>
+    <p class="lead">Ce que je peux réaliser pour toi, de l'idée à la mise en ligne.</p>
+    <div class="svgrid">
+      <article class="scard"><span class="sic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><h3>Développement Web &amp; Mobile</h3><p>Sites web et applications mobiles claires, rapides et adaptées à tous les écrans, du frontend au backend.</p><a class="btn alt sm" href="#contact" data-svc="Développement Web &amp; Mobile">En savoir plus</a></article>
+      <article class="scard"><span class="sic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 17 6-6-6-6M12 19h8"/></svg></span><h3>Programmation personnalisée</h3><p>Création d'outils et d'applications de gestion sur mesure pour automatiser vos tâches et simplifier vos processus.</p><a class="btn alt sm" href="#contact" data-svc="Programmation personnalisée">En savoir plus</a></article>
+      <article class="scard"><span class="sic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span><h3>Design UI/UX &amp; graphique</h3><p>Maquettes, prototypes et visuels pensés à partir des besoins réels des utilisateurs.</p><a class="btn alt sm" href="#contact" data-svc="Design UI/UX &amp; graphique">En savoir plus</a></article>
+      <article class="scard"><span class="sic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14.2c2.2.7 3.5 2.6 3.5 5.8"/></svg></span><h3>Formation &amp; Collaboration</h3><p>Partage de connaissances et accompagnement sur le développement web et la programmation, pour les particuliers et les équipes.</p><a class="btn alt sm" href="#contact" data-svc="Formation &amp; Collaboration">En savoir plus</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="ct" id="contact">
+  <div class="wrap">
+    <h2>Travaillons ensemble.</h2>
+    <p class="lead">Un stage, un projet, une maquette à imaginer ? Écris-moi, je réponds vite.</p>
+    <div class="cgrid">
+      <div class="term">
+        <div class="tbar"><span>contact@aliyatou:~$</span></div>
+        <div class="tbody">
+          <p>Bienvenue, entrez vos informations pour me contacter.</p>
+          <div class="f"><label for="cn">nom:</label><input id="cn" autocomplete="name"></div>
+          <div class="f"><label for="ce">email:</label><input id="ce" type="email" autocomplete="email"></div>
+          <div class="f"><label for="cs">sujet:</label><input id="cs"></div>
+          <div class="f"><label for="cm">message:</label><textarea id="cm" rows="4"></textarea></div>
+          <button type="button" class="send" id="send"><b>$</b> envoyer --message</button>
+          <p class="note" id="note" role="status"></p>
+        </div>
+      </div>
+      <div class="prof">
+        <h3>Mes profils &amp; contacts</h3>
+        <div class="tiles"><a class="tile" style="--c:var(--blue)" href="https://www.linkedin.com/in/oumou-tourab-aliyatou-rachid-a2b548358/" target="_blank" rel="noopener"><span class="ti"><b>in</b></span>LinkedIn</a><a class="tile" style="--c:var(--ink)" href="#" data-gh target="_blank" rel="noopener"><span class="ti"><b>&lt;/&gt;</b></span>GitHub</a><a class="tile" style="--c:var(--orange)" href="mailto:oumou.aliyatou@facsciences-uy1.cm"><span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>Gmail</a><a class="tile" style="--c:var(--blue)" href="https://wa.me/237670483414" target="_blank" rel="noopener"><span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 9c0 3 3 6 6 6l1-2-2-1-1 1c-1-.5-2-1.500-2.500-2.500l1-1-1-2z"/></svg></span>WhatsApp</a><a class="tile" style="--c:var(--orange)" href="tel:+237670483414"><span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>Appeler</a><a class="tile" style="--c:var(--blue)" href="https://www.facebook.com/share/1BU9rYa9e7/?mibextid=wwXIfr" target="_blank" rel="noopener"><span class="ti"><b>f</b></span>Facebook</a></div>
+        <div class="inf"><span class="ii"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.100 7-11a7 7 0 0 0-14 0c0 4.900 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg></span><div><b>Localisation</b><small>Yaoundé, Cameroun</small></div></div>
+        <div class="inf"><span class="ii"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Réponse rapide</b><small>24-48 heures</small></div></div>
       </div>
     </div>
   </div>
@@ -317,15 +377,21 @@ nav.open{display:flex}
 /* ====== À MODIFIER ====== */
 var CONFIG = {
   github: "https://github.com/Aliya-nadi",
-  email: "oumou.aliyatou@facsciences-uy1.cm",
-  phones: ["+237670483414", "+237693434456"]
+  email: "oumou.aliyatou@facsciences-uy1.cm"
 };
 /* ======================== */
 document.querySelectorAll("[data-gh]").forEach(function(a){a.href=CONFIG.github});
-var m=document.querySelector("[data-mail]");m.href="mailto:"+CONFIG.email;document.getElementById("mailTxt").textContent=CONFIG.email;
-CONFIG.phones.forEach(function(p,i){
-  document.querySelector('[data-tel="'+i+'"]').href="tel:"+p;
-  document.getElementById("tel"+i).textContent=p.replace(/^\+237(\d{3})(\d{3})(\d{3})$/,"+237 $1 $2 $3");
+var $=function(id){return document.getElementById(id)};
+document.querySelectorAll("[data-svc]").forEach(function(a){
+  a.addEventListener("click",function(){$("cs").value="Service : "+a.getAttribute("data-svc").replace(/&amp;/g,"&")});
+});
+$("send").addEventListener("click",function(){
+  var n=$("cn").value.trim(),e=$("ce").value.trim(),s=$("cs").value.trim(),m=$("cm").value.trim(),note=$("note");
+  if(!n||!m){note.textContent="Merci d'indiquer au moins ton nom et ton message.";return}
+  if(e&&!/^\S+@\S+\.\S+$/.test(e)){note.textContent="Cette adresse e-mail ne semble pas valide.";return}
+  var body="Nom : "+n+"\nE-mail : "+(e||"non renseigné")+"\n\n"+m;
+  location.href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent(s||"Message depuis ton portfolio")+"&body="+encodeURIComponent(body);
+  note.textContent="Ton application e-mail va s'ouvrir. Sinon, écris-moi directement à "+CONFIG.email+".";
 });
 document.getElementById("yr").textContent=new Date().getFullYear();
 
